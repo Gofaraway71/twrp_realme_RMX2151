@@ -55,11 +55,7 @@ jobs:
       run: |
         cd work/out/target/product/$DEVICE
         curl -sL https://git.io/file-transfer | sh
-        ./transfer wet recovery.img
+        ./transfer wet TWRP-$DEVICE-$(date +"%Y%m%d")-Unofficial.img
+             
+        cp $HOME/twrp/out/target/product/$DEVICE/recovery.img $HOME/twrp/TWRP-$DEVICE$-$(date +"%Y%m%d")-Unofficial.img
         
-        
-        export version=$(cat bootable/recovery/variables.h | grep "define TW_MAIN_VERSION_STR" | cut -d '"' -f2)
-        cp $HOME/twrp/out/target/product/$DEVICE/recovery.img $HOME/twrp/TWRP-$version-$DEVICE$-$(date +"%Y%m%d")-Unofficial.img
-        cd $HOME/twrp/
-        # Optional: You might need to switch from https://transfer.sh to https://file.io
-        curl -s --upload-file TWRP-$version-$DEVICE-$(date +"%Y%m%d")-Unofficial.img https://transfer.sh/ && echo ""        
