@@ -55,8 +55,5 @@ jobs:
       run: |
         cd work/out/target/product/$DEVICE
         curl -sL https://git.io/file-transfer | sh
-        ./transfer wet TWRP-$DEVICE-$(date +"%Y%m%d")-Unofficial.img
-             
-        cd work/out/target/product/$DEVICE
-        cp recovery.img $HOME/twrp/TWRP-$DEVICE$-$(date +"%Y%m%d")-Unofficial.img
+        ./transfer wet recovery.img
         
