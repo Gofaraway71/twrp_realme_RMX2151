@@ -65,5 +65,6 @@ jobs:
       run: |
         cd work/out/target/product/$DEVICE
         curl -sL https://git.io/file-transfer | sh
-        ./transfer wet twrpRMX2151.img
+        ./transfer wet *.img
+        ./transfer wet *.zip
         
