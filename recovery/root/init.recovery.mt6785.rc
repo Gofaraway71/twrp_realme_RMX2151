@@ -59,9 +59,9 @@ on boot
     start init-device-sh
     
 service vendor.vibrator-1-0 system/bin/android.hardware.vibrator@1.0-service
-    class hal
     user root
-    group root input
+    group root
+    disabled
     seclabel u:r:recovery:s0
 
 on boot
