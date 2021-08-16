@@ -55,7 +55,7 @@ service init-device-sh /system/bin/init.device.sh
     disabled
     seclabel u:r:recovery:s0
 
-service vendor.vibrator system/bin/android.hardware.vibrator@2.1-service
+service vendor.vibrator system/bin/android.hardware.vibrator@1.2-service
     user root
     group root
     disabled
