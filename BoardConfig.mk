@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2001
+DEVICE_PATH := device/realme/RMX2151
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -152,7 +152,7 @@ TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
-TW_INCLUDE_LOGICAL := oppo_product oppo_engineering preload_common
+TW_INCLUDE_LOGICAL := product oppo_engineering preload_common
 TW_OZIP_DECRYPT_KEY := 0000
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
