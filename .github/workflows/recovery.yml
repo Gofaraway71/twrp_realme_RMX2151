@@ -30,7 +30,6 @@ jobs:
         curl https://raw.githubusercontent.com/snjy4/TWRP_BUILD/main/cleanup.sh | bash
         
         git config --global user.email "abdou.bens34000@gmail.com"
- 
         sudo -E apt-get clean
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev repo rsync flex bison aria2
